@@ -1,0 +1,11 @@
+{
+  "extends": "@jaskang/config/tsconfig.react.json",
+  "compilerOptions": {
+    // "jsx": "react",
+    // "types": ["node"],
+    // "declaration": true,
+    // "emitDeclarationOnly": true
+    "baseUrl": "."
+  },
+  "include": ["src", "playground"]
+}
