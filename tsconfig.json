@@ -5,7 +5,10 @@
     // "types": ["node"],
     // "declaration": true,
     // "emitDeclarationOnly": true
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src", "playground"]
 }
