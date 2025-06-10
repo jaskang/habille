@@ -1,5 +1,9 @@
 import type { ComponentProps, ReactNode } from 'react'
-import { Alert as BaseAlert, AlertDescription as BaseAlertDescription, AlertTitle as BaseAlertTitle } from '../ui/alert'
+import {
+  Alert as BaseAlert,
+  AlertDescription as BaseAlertDescription,
+  AlertTitle as BaseAlertTitle,
+} from '../components/ui/alert'
 
 type AlertProps = ComponentProps<typeof BaseAlert> & {
   icon?: ReactNode
