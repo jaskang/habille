@@ -7,17 +7,17 @@ import {
 
 type AlertProps = ComponentProps<typeof BaseAlert> & {
   icon?: ReactNode
-  title?: ReactNode
-  description?: ReactNode
+  title: ReactNode
+  children?: ReactNode
 }
 
 function Alert(props: AlertProps) {
-  const { icon, title, description, ...rest } = props
+  const { icon, title, children, ...rest } = props
   return (
     <BaseAlert {...rest}>
-      {icon ?? icon}
-      {title ?? <BaseAlertTitle>{title}</BaseAlertTitle>}
-      {description ?? <BaseAlertDescription>{description}</BaseAlertDescription>}
+      {icon && icon}
+      {title && <BaseAlertTitle>{title}</BaseAlertTitle>}
+      {children && <BaseAlertDescription>{children}</BaseAlertDescription>}
     </BaseAlert>
   )
 }

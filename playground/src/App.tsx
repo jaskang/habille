@@ -1,4 +1,5 @@
-import { Button } from '../../src'
+import { AlertCircleIcon } from 'lucide-react'
+import { Alert, Button } from '../../src'
 
 export function App() {
   return (
@@ -19,6 +20,14 @@ export function App() {
         <Button variant="outline" size="lg">
           lg size
         </Button>
+      </div>
+      <div className="flex items-center gap-2">
+        <Alert icon={<AlertCircleIcon />} title="Alert title">
+          Alert description
+        </Alert>
+        <Alert variant="destructive" icon={<AlertCircleIcon />} title="Alert title">
+          Alert description
+        </Alert>
       </div>
     </>
   )
