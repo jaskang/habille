@@ -1,3 +1,3 @@
-import { eslint } from "@jaskang/config";
+import { eslint } from '@jaskang/config'
 
-export default eslint();
+export default eslint()

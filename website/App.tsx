@@ -1,5 +1,5 @@
 import { AlertCircleIcon } from 'lucide-react'
-import { Alert, Button } from '../../src'
+import { Alert, Button } from '../src'
 
 export function App() {
   return (

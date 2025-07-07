@@ -1,14 +1,13 @@
 {
-  "extends": "@jaskang/config/tsconfig.react.json",
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
   "compilerOptions": {
-    // "jsx": "react",
-    // "types": ["node"],
-    // "declaration": true,
-    // "emitDeclarationOnly": true
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
-  },
-  "include": ["src", "playground"]
+  }
 }

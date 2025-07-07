@@ -1,2 +1,2 @@
-export * from './habille/button'
-export * from './habille/alert'
+export * from './components/button'
+export * from './components/alert'
