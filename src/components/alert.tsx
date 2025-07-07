@@ -1,11 +1,15 @@
 import type { ComponentProps, ReactNode } from 'react'
+import type { PrettifyProps } from '@/lib/types'
 import {
   Alert as UIAlert,
   AlertDescription as UIAlertDescription,
   AlertTitle as UIAlertTitle,
 } from '../components/ui/alert'
 
+type UIAlertProps = PrettifyProps<typeof UIAlert>
+
 export type AlertProps = {
+  variant?: UIAlertProps['variant']
   icon?: ReactNode
   title: ReactNode
 }

@@ -1,5 +1,5 @@
 import { AlertCircleIcon } from 'lucide-react'
-import { Alert, Button } from '../src'
+import { Alert, Badge, Button } from '../src'
 
 export function App() {
   return (
@@ -28,6 +28,24 @@ export function App() {
         <Alert variant="destructive" icon={<AlertCircleIcon />} title="Alert title">
           Alert description
         </Alert>
+      </div>
+      <div className="flex items-center gap-2">
+        <Badge>default</Badge>
+        <Badge variant="secondary">secondary</Badge>
+        <Badge variant="destructive">destructive</Badge>
+        <Badge variant="outline">outline</Badge>
+        <Badge variant="default" pill>
+          default
+        </Badge>
+        <Badge variant="secondary" pill>
+          secondary
+        </Badge>
+        <Badge variant="destructive" pill>
+          destructive
+        </Badge>
+        <Badge variant="outline" pill>
+          outline
+        </Badge>
       </div>
     </>
   )
